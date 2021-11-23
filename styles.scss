@@ -2,7 +2,7 @@ $primary-color: hsl(243, 87%, 12%);
 $secondary-color: hsl(238, 22%, 44%);
 $bright-blue-color: hsl(224, 93%, 58%);
 $moderate-cyan-color: hsl(170, 45%, 43%);
-$dark-white-color: hsl(240, 75%, 98%);
+$dark-white-color: #f8f8fe;
 $light-gray-color: hsl(0, 0%, 75%);
 
 * {
@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 3rem;
-    margin: 1rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
     padding: 2rem 3rem;
     .logo {
       background-image: url(./images/logo.svg);
@@ -40,6 +40,7 @@ body {
       list-style-type: none;
       li {
         margin: 0 1rem 0 1rem;
+        cursor: pointer;
       }
     }
   }
@@ -49,7 +50,7 @@ body {
   .footer {
     flex-flow: row-reverse;
     align-items: center;
-    padding: 4rem 3rem;
+    padding: 6rem 3rem 10rem 3rem;
   }
 
   .section-1 {
@@ -71,6 +72,7 @@ body {
   .section-2 {
     display: flex;
     background-color: $dark-white-color;
+    padding: 0 3rem 3rem 3rem;
 
     .see-more {
       display: flex;
@@ -196,7 +198,6 @@ body {
       color: white;
       background-repeat: no-repeat;
       height: 4rem;
-      margin: 2rem 0 0 0;
     }
 
     .attribution {
@@ -242,7 +243,8 @@ body {
         list-style-type: none;
         margin: 0;
         li {
-          margin: 0 1.7rem 0 1.7rem;
+          margin: 1rem 1.7rem 0 1.7rem;
+          cursor: pointer;
         }
       }
       ul:first-of-type {
@@ -383,7 +385,8 @@ body {
           }
         }
 
-        .footer__menu-1, .footer__menu-1  {
+        .footer__menu-1,
+        .footer__menu-1 {
           margin: 3rem 0;
         }
       }
